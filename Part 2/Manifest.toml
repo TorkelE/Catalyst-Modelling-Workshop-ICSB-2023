@@ -190,9 +190,13 @@ version = "0.5.1"
 
 [[deps.Catalyst]]
 deps = ["DataStructures", "DiffEqBase", "DocStringExtensions", "Graphs", "JumpProcesses", "LaTeXStrings", "Latexify", "LinearAlgebra", "MacroTools", "ModelingToolkit", "Parameters", "Reexport", "Requires", "SparseArrays", "SymbolicUtils", "Symbolics", "Unitful"]
-git-tree-sha1 = "e38c5c3c9522f31e3089ffb4f022edda251641c7"
+git-tree-sha1 = "099b15b77b6ec346509078bf1f863d287b830822"
 uuid = "479239e8-5488-4da2-87a7-35f2df7eef83"
-version = "13.4.1"
+version = "13.5.0"
+weakdeps = ["HomotopyContinuation"]
+
+    [deps.Catalyst.extensions]
+    CatalystHomotopyContinuationExtension = "HomotopyContinuation"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
